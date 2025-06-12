@@ -5,7 +5,7 @@ ARG DOCKER_VC_REPO
 
 FROM ${DOCKER_REPO}:${DOCKER_TAG} as clsource
 
-FROM debian:bookworm-slim as consensus
+FROM debian:12.11-slim as consensus
 
 #Included here to avoid build-time complaints
 ARG BUILD_TARGET
