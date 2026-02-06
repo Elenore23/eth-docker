@@ -1,4 +1,4 @@
-FROM grafana/grafana:latest
+FROM grafana/grafana:12.4.0-21693836646
 
 USER root
 RUN apk --update add wget tree jq sed su-exec
